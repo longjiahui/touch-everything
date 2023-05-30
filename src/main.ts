@@ -11,7 +11,7 @@ app.use(plugins)
 
 const module = isDev
     ? import.meta.glob('@/index')
-    : import.meta.glob('../dist/myLib.js')
+    : import.meta.glob('../dist/te.js')
 
 ;(async () => {
     const [{ default: defaultLib }] = (await Promise.all(
